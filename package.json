@@ -1,0 +1,46 @@
+{
+  "name": "podgornyy.rocks",
+  "version": "1.0.0",
+  "description": "Personal website of Sergey Podgornyy",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyPodgornyy/podgornyy.rocks.git"
+  },
+  "keywords": [
+    "website",
+    "landing-page",
+    "web",
+    "developer",
+    "development",
+    "programmer"
+  ],
+  "author": "Sergey Podgornyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyPodgornyy/podgornyy.rocks/issues"
+  },
+  "homepage": "https://github.com/SergeyPodgornyy/podgornyy.rocks#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "classnames": "^2.2.6",
+    "moment": "^2.22.2",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "cross-env": "^3.2.3",
+    "laravel-mix": "2.*"
+  }
+}
