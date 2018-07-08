@@ -1,0 +1,54 @@
+.about {
+  padding: 80px 0;
+
+  .about-info {
+    h3 {
+      font-family: $font-pack;
+      margin: 0;
+      color: $color-dark-grey;
+      font-size: 44px;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 17px;
+      color: $color-light-green;
+      font-weight: 600;
+      margin: 10px 0 16px 0;
+      font-style: italic;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: $color-white;
+      width: 71%;
+      margin: 0 auto;
+      line-height: 1.8em;
+    }
+  }
+
+  .grids {
+    margin-top: 60px;
+
+    .grid {
+      h4 {
+        font-family: $font-pack;
+        text-align: left;
+        color: $color-light-green;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: left;
+        color: $color-white;
+        font-size: 14px;
+        line-height: 1.8em;
+        padding: 2em 0 0 0;
+      }
+    }
+  }
+}

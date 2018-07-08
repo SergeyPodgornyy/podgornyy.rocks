@@ -1,0 +1,30 @@
+.skills {
+  .info h2 {
+    font-family: $font-pack;
+    margin: 0;
+    color: $color-grey;
+    font-size: 44px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .grids {
+    margin-top: 60px;
+
+    .grid {
+      .circle {
+        .circles-text-wrp {
+          font-size: 30px;
+          color: $color-white;
+          font-weight: 300;
+        }
+      }
+
+      p {
+        margin: 34px 0 0 0;
+        font-size: 22px;
+        color: $color-grey;
+      }
+    }
+  }
+}

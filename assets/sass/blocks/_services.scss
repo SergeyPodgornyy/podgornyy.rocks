@@ -1,0 +1,144 @@
+.services {
+  padding: 80px 0;
+
+  .headline h3 {
+    font-family: $font-pack;
+    margin: 0;
+    color: $color-green;
+    font-size: 44px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .grids {
+    margin-top: 50px;
+
+    .grid {
+      .container {
+        .icon {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: $color-green;
+          margin: 0 auto;
+          text-align: center;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: $color-dark-grey;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            @include scale(0);
+            @include transition(all 0.3s ease 0s);
+          }
+
+          img {
+            padding: 23px 0 0 0;
+            position: relative;
+            z-index: 100;
+            @include transition(all 0.3s ease 0s);
+          }
+        }
+
+        .glyphicon-star,
+        .glyphicon-cog,
+        .glyphicon-map-marker,
+        .glyphicon-thumbs-up,
+        .glyphicon-globe {
+          z-index: 9999;
+          top: 27px;
+          left: 0px;
+          font-size: 45px;
+          color: $color-white;
+        }
+
+        .glyphicon-pencil{
+          z-index: 9999;
+          top: 31px;
+          left: 1px;
+          font-size: 37px;
+          color: $color-white;
+        }
+      }
+
+      &:hover {
+        .icon {
+          img {
+            @include scale(0.9);
+          }
+
+          &::before {
+            @include scale(1);
+          }
+        }
+      }
+
+      &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+        margin-top: 50px;
+      }
+
+      h3 {
+        margin: 20px 0 16px 0;
+        font-size: 20px;
+        color: $color-grey;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 7px 0;
+        color: $color-white;
+        line-height: 1.8em;
+      }
+
+      &.even {
+        h3 {
+          color: $color-green !important;
+        }
+
+        .icon {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: $color-dark-grey;
+          margin: 0 auto;
+          text-align: center;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: $color-green;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            @include scale(0);
+            @include transition(all 0.3s ease 0s);
+          }
+        }
+
+        &:hover {
+          .icon {
+            img {
+              @include scale(0.9);
+            }
+
+            &::before {
+              @include scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

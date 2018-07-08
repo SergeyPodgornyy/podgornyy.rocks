@@ -1,0 +1,49 @@
+.link-kumya {
+  font-size: 6.5em !important;
+  overflow: hidden;
+  line-height: 1;
+  color: $color-blue;
+
+  &:hover {
+    color: $color-white;
+
+    &::after {
+      @include translate3d(0, 0, 0);
+    }
+
+    span::before {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: $color-darkest-grey;
+
+    @include translate3d(101%, 0, 0);
+    @include transition-transform(0.5s);
+    @include transition-timing-function(cubic-bezier(0.7, 0, 0.3, 1));
+  }
+
+  span {
+    display: block;
+    position: relative;
+
+    &::before {
+      content: attr(data-letters);
+      position: absolute;
+      color: $color-blue;
+      left: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0%;
+
+      @include transition(width 0.5s);
+      @include transition-timing-function(cubic-bezier(0.7, 0, 0.3, 1));
+    }
+  }
+}

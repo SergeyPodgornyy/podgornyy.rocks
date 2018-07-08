@@ -1,0 +1,21 @@
+.copy-right {
+  background: $color-dark-grey;
+  padding: 17px 0;
+
+  p {
+    text-align: center;
+    margin: 0 0 0px 0;
+    font-size: 14px;
+    color: $color-grey;
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+      color: $color-grey;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+}

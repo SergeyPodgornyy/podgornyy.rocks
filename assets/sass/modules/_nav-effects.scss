@@ -1,0 +1,30 @@
+/*-- effect for nav --*/
+.cl-effect-1 {
+  a {
+    &::before,
+    &::after {
+      display: inline-block;
+      opacity: 0;
+      @include transition-transform(0.3s, opacity 0.2s);
+    }
+
+    &::before {
+      margin-right: 10px;
+      content: '[';
+      @include translateX(20px);
+    }
+
+    &::after {
+      margin-left: 10px;
+      content: ']';
+      @include translateX(-20px);
+    }
+
+    &:hover, &:focus {
+      &::before, &::after {
+        opacity: 1;
+        @include translateX(0px);
+      }
+    }
+  }
+}

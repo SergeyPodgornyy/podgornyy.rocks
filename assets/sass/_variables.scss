@@ -1,0 +1,37 @@
+$color-white: #ffffff;
+$color-grey: #ced7df;
+$color-normal-grey: #59626a;
+$color-middle-grey: #898989;
+$color-dark-grey: #323b43;
+$color-darkest-grey: #242424;
+$color-light-black: #23232b;
+$color-black: #000;
+
+$color-blue: #4eacff;
+$color-green: #76b852;
+$color-light-green: #d9ffc4;
+
+$color-orange: #f26000;
+
+$screen-xxs: 320px;
+$screen-xs: 480px;
+$screen-sm: 640px;
+$screen-sm-md: 768px;
+$screen-md: 800px;
+$screen-lg: 1024px;
+
+$img-path: "../images/" !default;
+$font-path: "../fonts/" !default;
+
+$font-jockey: "Jockey One";
+$font-helvetica: "Helvetica";
+$font-arial: "Arial";
+$font-source-sans: "Source Sans Pro";
+$font-open-sans: "Open Sans";
+
+$font-pack: $font-helvetica, $font-arial, $font-source-sans, $font-jockey, sans-serif;
+
+:export {
+  colorGrey: $color-grey;
+  colorGreen: $color-green;
+}

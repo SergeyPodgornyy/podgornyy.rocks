@@ -12,7 +12,7 @@ const { mix } = require('laravel-mix');
  */
 
 mix.setPublicPath('build');
-mix.setResourceRoot('assets');
+mix.setResourceRoot('../');
 
 // Core assets
 mix.js('assets/js/app.js', 'build/js')

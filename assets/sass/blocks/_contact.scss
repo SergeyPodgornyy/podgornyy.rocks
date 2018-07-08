@@ -1,0 +1,32 @@
+.contact {
+  .grid {
+    .point-icon {
+      .glyphicon-map-marker,
+      .glyphicon-envelope,
+      .glyphicon-earphone {
+        z-index: 9999;
+        top: 0px;
+        left: 1px;
+        font-size: 37px;
+        color: $color-dark-grey;
+      }
+    }
+
+    p {
+      color: $color-white;
+      margin: 18px auto 0 auto;
+      width: 61%;
+      font-size: 14px;
+      line-height: 1.8em;
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-dark-grey;
+        }
+      }
+    }
+  }
+}

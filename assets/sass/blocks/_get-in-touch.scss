@@ -1,0 +1,27 @@
+.get-in-touch {
+  .get-info {
+    h3 {
+      font-family: $font-pack;
+      margin: 0;
+      color: $color-green;
+      font-size: 44px;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    h4 {
+      margin: 12px 0;
+      color: $color-middle-grey;
+      font-size: 17px;
+    }
+
+    p {
+      line-height:1.8em;
+      color: $color-black;
+      margin: 15px auto 45px auto;
+      width: 50%;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
