@@ -44,3 +44,45 @@ ul {
 .block {
   padding: 80px 0;
 }
+
+@media (max-width: $screen-xs) {
+  .show-xs {  // display since extra small screen
+    display: none !important;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .show-sm {  // display since small screen
+    display: none !important;
+  }
+}
+
+@media (max-width: $screen-sm-md) {
+  .show-sm-md {  // display since middle screen
+    display: none !important;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .show-md {  // display since medium screen
+    display: none !important;
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .show-lg {  // display since large screen
+    display: none !important;
+  }
+}
+
+@media (max-width: $screen-xlg) {
+  .show-xlg {  // display since extra large screen
+    display: none !important;
+  }
+}
+
+@media (max-width: $screen-xxl) {
+  .show-xxl {  // display since super large screen
+    display: none !important;
+  }
+}
