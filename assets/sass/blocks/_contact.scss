@@ -28,5 +28,32 @@
         }
       }
     }
+
+    @media (max-width: $screen-md) {
+      &.text-center {
+        float: left;
+        width: 33.3%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    .info {
+      input[type="text"], textarea {
+        font-size: 13px;
+        padding: 8px 10px;
+        margin: 0 10px 20px 0;
+      }
+      textarea {
+        height: 158px;
+      }
+      input[type=submit] {
+        font-size: 14px;
+        padding: 8px 9px;
+      }
+    }
   }
 }

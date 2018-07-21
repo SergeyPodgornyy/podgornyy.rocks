@@ -92,12 +92,27 @@ ul {
   .about, .skills, .services, .get-in-touch, .contact {
     padding: 60px 0;
   }
-  .about .grids, .contact .contact-info, .skill .grids {
+  .about .grids, .contact .contact-info, .skill .grids, .services .grids {
     margin-top: 45px;
   }
 
   .about .about-info h3, .skill .info h2, .get-info h3 {
     font-size: 40px;
+  }
+}
+@media (max-width: $screen-md) {
+  .about, .skills, .services, .get-in-touch, .contact {
+    padding: 50px 0;
+  }
+  .about .about-info h3, .skill .info h2, .get-info h3 {
+    font-size: 35px;
+  }
+  .about .about-info p, .about .grid p, .services .grid p, .get-info p, .contact .grid p{
+    font-size: 13px;
+  }
+
+  .about-grids, .contact-info {
+    margin-top: 30px;
   }
 }
 /*-- //responsive media queries --*/

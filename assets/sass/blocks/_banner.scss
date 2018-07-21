@@ -2,6 +2,10 @@
   .grids {
     margin-top: 50px;
 
+    @media (max-width: $screen-md) {
+      margin-top: 35px;
+    }
+
     .navigation {
       padding-top: 18px;
 
@@ -16,6 +20,10 @@
 
            @media (max-width: $screen-lg) {
              font-size: 8em;
+           }
+
+           @media (max-width: $screen-md) {
+             font-size: 7em;
            }
         }
       }
@@ -102,23 +110,71 @@
               }
             }
           }
+
+          @media (max-width: $screen-md) {
+            margin: 23px 0 0 0;
+
+            li {
+              line-height: 3.5em;
+
+              &:nth-child(1) a {
+                padding: 8px 27px;
+              }
+              &:nth-child(2) a {
+                padding: 8px 32px;
+              }
+              &:nth-child(3) a {
+                padding: 8px 36px;
+              }
+              &:nth-child(5) a {
+                padding: 8px 42px;
+              }
+              &:nth-child(6) a {
+                padding: 8px 32px;
+              }
+              &:nth-child(7) a {
+                padding: 8px 27px;
+              }
+
+              a {
+                font-size: 14px;
+                padding: 8px 47px;
+              }
+            }
+          }
         }
+      }
+
+      @media (max-width: $screen-md) {
+        float: left;
+        width: 38%;
       }
     }
 
-    .banner-image img {
-      width: 57%;
+    .banner-image {
+      img {
+        width: 57%;
 
-      @media (max-width: $screen-xxl) {
-        width: 70%;
+        @media (max-width: $screen-xxl) {
+          width: 70%;
+        }
+
+        @media (max-width: $screen-xlg) {
+          width: 85%;
+        }
+
+        @media (max-width: $screen-lg) {
+          width: 95%;
+        }
       }
 
-      @media (max-width: $screen-xlg) {
-        width: 85%;
-      }
+      @media (max-width: $screen-md) {
+        float: left;
+        width: 59%;
 
-      @media (max-width: $screen-lg) {
-        width: 95%;
+        // img {
+        //   width: 65%;
+        // }
       }
     }
   }

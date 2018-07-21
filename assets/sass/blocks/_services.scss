@@ -139,6 +139,40 @@
           }
         }
       }
+
+      @media (max-width: $screen-md) {
+        float: left;
+        width: 33.3%;
+
+        .container {
+          .glyphicon-star,
+          .glyphicon-cog,
+          .glyphicon-map-marker,
+          .glyphicon-thumbs-up,
+          .glyphicon-globe {
+            font-size: 35px;
+          }
+          .glyphicon-pencil {
+            top: 26px;
+            left: 1px;
+            font-size: 32px;
+          }
+        }
+
+        &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+          margin-top: 35px;
+        }
+
+        h3 {
+          font-size: 18px;
+          margin: 16px 0 10px 0;
+        }
+
+        & .icon, & .btm-gre .icon {
+          width: 87px;
+          height: 87px;
+        }
+      }
     }
   }
 }

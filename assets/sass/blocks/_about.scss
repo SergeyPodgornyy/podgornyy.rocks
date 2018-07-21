@@ -18,6 +18,10 @@
       font-weight: 600;
       margin: 10px 0 16px 0;
       font-style: italic;
+
+      @media (max-width: $screen-md) {
+        font-size: 15px;
+      }
     }
 
     p {
@@ -30,6 +34,10 @@
 
       @media (max-width: $screen-lg) {
         width: 82%;
+      }
+
+      @media (max-width: $screen-md) {
+        width: 95%;
       }
     }
   }
@@ -59,6 +67,15 @@
 
         @media (max-width: $screen-lg) {
           padding: 1.5em 0 0 0;
+        }
+      }
+
+      @media (max-width: $screen-md) {
+        float: left;
+        width: 50%;
+
+        p {
+          padding: 1em 0 0 0;
         }
       }
     }

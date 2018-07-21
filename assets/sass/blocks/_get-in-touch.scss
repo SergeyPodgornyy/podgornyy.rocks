@@ -27,5 +27,16 @@
         width: 57%;
       }
     }
+
+    @media (max-width: $screen-md) {
+      p {
+        width: 66%;
+        margin: 11px auto 30px auto;
+      }
+      h4 {
+        font-size: 15px;
+        margin: 9px 0;
+      }
+    }
   }
 }
