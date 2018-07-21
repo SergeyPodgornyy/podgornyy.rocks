@@ -13,6 +13,10 @@
            text-transform: uppercase;
            text-decoration: none;
            font-family: $font-pack;
+
+           @media (max-width: $screen-lg) {
+             font-size: 8em;
+           }
         }
       }
 
@@ -28,7 +32,6 @@
           li {
             display: block;
             line-height: 4.2em;
-
 
             &:nth-child(1) a {
               padding: 11px 48px;
@@ -67,12 +70,56 @@
               }
             }
           }
+
+          @media (max-width: $screen-lg) {
+            margin: 27px 0 0 0;
+
+            li {
+              line-height: 3.8em;
+
+              &:nth-child(1) a {
+                padding: 10px 36px;
+              }
+              &:nth-child(2) a {
+                padding: 10px 55px;
+              }
+              &:nth-child(3) a {
+                padding: 10px 50px;
+              }
+              &:nth-child(5) a {
+                padding: 10px 60px;
+              }
+              &:nth-child(6) a {
+                padding: 10px 52px;
+              }
+              &:nth-child(7) a {
+                padding: 10px 36px;
+              }
+
+              a {
+                font-size: 15px;
+                padding: 10px 70px;
+              }
+            }
+          }
         }
       }
     }
 
     .banner-image img {
       width: 57%;
+
+      @media (max-width: $screen-xxl) {
+        width: 70%;
+      }
+
+      @media (max-width: $screen-xlg) {
+        width: 85%;
+      }
+
+      @media (max-width: $screen-lg) {
+        width: 95%;
+      }
     }
   }
 }

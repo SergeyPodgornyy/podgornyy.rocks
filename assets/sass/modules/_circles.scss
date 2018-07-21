@@ -17,6 +17,10 @@
           font-size: 30px;
           color: $color-white;
           font-weight: 300;
+
+          @media (max-width: $screen-lg) {
+            font-size: 40px !important;
+          }
         }
       }
 
@@ -24,6 +28,11 @@
         margin: 34px 0 0 0;
         font-size: 22px;
         color: $color-grey;
+
+        @media (max-width: $screen-lg) {
+          margin: 25px 0 0 0;
+          font-size: 19px;
+        }
       }
     }
   }

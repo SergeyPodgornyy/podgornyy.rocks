@@ -4,6 +4,10 @@
   line-height: 1;
   color: $color-blue;
 
+  @media (max-width: $screen-lg) {
+    font-size: 5.5em !important;
+  }
+
   &:hover {
     color: $color-white;
 

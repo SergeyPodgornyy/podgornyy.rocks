@@ -86,3 +86,18 @@ ul {
     display: none !important;
   }
 }
+
+/*-- responsive media queries --*/
+@media (max-width: $screen-lg) {
+  .about, .skills, .services, .get-in-touch, .contact {
+    padding: 60px 0;
+  }
+  .about .grids, .contact .contact-info, .skill .grids {
+    margin-top: 45px;
+  }
+
+  .about .about-info h3, .skill .info h2, .get-info h3 {
+    font-size: 40px;
+  }
+}
+/*-- //responsive media queries --*/

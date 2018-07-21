@@ -27,6 +27,10 @@
       width: 71%;
       margin: 0 auto;
       line-height: 1.8em;
+
+      @media (max-width: $screen-lg) {
+        width: 82%;
+      }
     }
   }
 
@@ -40,6 +44,10 @@
         color: $color-light-green;
         font-size: 24px;
         text-transform: uppercase;
+
+        @media (max-width: $screen-lg) {
+          font-size: 22px;
+        }
       }
 
       p {
@@ -48,6 +56,10 @@
         font-size: 14px;
         line-height: 1.8em;
         padding: 2em 0 0 0;
+
+        @media (max-width: $screen-lg) {
+          padding: 1.5em 0 0 0;
+        }
       }
     }
   }
