@@ -8,6 +8,14 @@
     font-size: 5.5em !important;
   }
 
+  @media (max-width: $screen-md) {
+    font-size: 4em !important;
+  }
+
+  @media (max-width: $screen-sm-md) {
+    font-size: 3em !important;
+  }
+
   &:hover {
     color: $color-white;
 

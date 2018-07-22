@@ -168,9 +168,15 @@
           margin: 16px 0 10px 0;
         }
 
-        & .icon, & .btm-gre .icon {
+        & .icon, &.btm-gre .icon {
           width: 87px;
           height: 87px;
+        }
+      }
+
+      @media (max-width: $screen-sm-md) {
+        h3 {
+          font-size: 18px;
         }
       }
     }
