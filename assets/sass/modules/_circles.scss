@@ -45,6 +45,14 @@
           font-size: 16px;
         }
       }
+
+      @media (max-width: $screen-md) {
+        width: 50%;
+
+        &:nth-child(3), &:nth-child(4)  {
+          margin: 30px 0;
+        }
+      }
     }
   }
 }

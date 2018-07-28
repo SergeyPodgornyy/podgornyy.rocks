@@ -116,4 +116,12 @@ ul {
   }
 }
 @media (max-width: $screen-sm-md) {}
+@media (max-width: $screen-sm) {
+  .about, .skills, .services, .get-in-touch, .contact {
+    padding: 45px 0;
+  }
+  .about .about-info h3, .skill .info h2, .get-info h3 {
+    font-size: 30px;
+  }
+}
 /*-- //responsive media queries --*/

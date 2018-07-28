@@ -179,6 +179,18 @@
           font-size: 18px;
         }
       }
+
+      @media (max-width: $screen-sm) {
+        padding: 0 10px;
+
+        p {
+          margin: 0;
+        }
+        h3 {
+          font-size: 17px;
+          margin: 14px 0 10px 0;
+        }
+      }
     }
   }
 }

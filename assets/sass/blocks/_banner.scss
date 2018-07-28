@@ -25,6 +25,10 @@
            @media (max-width: $screen-md) {
              font-size: 7em;
            }
+
+           @media (max-width: $screen-sm) {
+             font-size: 5.5em;
+           }
         }
       }
 
@@ -170,6 +174,38 @@
               }
             }
           }
+
+          @media (max-width: $screen-sm) {
+            margin: 19px 0 0 0;
+
+            li {
+              line-height: 3.2em;
+
+              &:nth-child(1) a {
+                padding: 8px 20px;
+              }
+              &:nth-child(2) a {
+                padding: 8px 28px;
+              }
+              &:nth-child(3) a {
+                padding: 8px 16px;
+              }
+              &:nth-child(5) a {
+                padding: 8px 28px;
+              }
+              &:nth-child(6) a {
+                padding: 8px 22px;
+              }
+              &:nth-child(7) a {
+                padding: 8px 20px;
+              }
+
+              a {
+                font-size: 13px;
+                padding: 8px 30px;
+              }
+            }
+          }
         }
       }
 
@@ -182,6 +218,10 @@
         float: none;
         display: inline-block;
         width: 44%;
+      }
+
+      @media (max-width: $screen-sm) {
+        padding-top: 0;
       }
     }
 

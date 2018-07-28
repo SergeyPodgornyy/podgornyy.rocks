@@ -9,6 +9,10 @@
         left: 1px;
         font-size: 37px;
         color: $color-dark-grey;
+
+        @media (max-width: $screen-sm) {
+          font-size: 28px;
+        }
       }
     }
 
@@ -38,10 +42,18 @@
         width: 100%;
       }
     }
+
+    @media (max-width: $screen-sm) {
+      padding: 0 10px;
+
+      p {
+        margin: 9px auto 0 auto;
+      }
+    }
   }
 
-  @media (max-width: $screen-md) {
-    .info {
+  .info {
+    @media (max-width: $screen-md) {
       input[type="text"], textarea {
         font-size: 13px;
         padding: 8px 10px;
@@ -53,6 +65,20 @@
       input[type=submit] {
         font-size: 14px;
         padding: 8px 9px;
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      input[type="text"], textarea {
+        margin: 0px 8px 16px 0;
+      }
+
+      textarea {
+        height: 146px;
+      }
+
+      input[type=submit] {
+        font-size: 13px;
       }
     }
   }

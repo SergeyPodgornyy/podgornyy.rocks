@@ -39,6 +39,10 @@
       @media (max-width: $screen-md) {
         width: 95%;
       }
+
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
     }
   }
 
@@ -55,6 +59,10 @@
 
         @media (max-width: $screen-lg) {
           font-size: 22px;
+        }
+
+        @media (max-width: $screen-sm) {
+          font-size: 20px;
         }
       }
 
