@@ -26,6 +26,10 @@
       @media (max-width: $screen-lg) {
         width: 57%;
       }
+
+      @media (max-width: $screen-xs) {
+        width: 100%;
+      }
     }
 
     @media (max-width: $screen-md) {

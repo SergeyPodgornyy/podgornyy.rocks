@@ -6,6 +6,10 @@
       margin-top: 35px;
     }
 
+    @media (max-width: $screen-xs) {
+      margin-top: 20px;
+    }
+
     .navigation {
       padding-top: 18px;
 
@@ -29,15 +33,44 @@
            @media (max-width: $screen-sm) {
              font-size: 5.5em;
            }
+
+           @media (max-width: $screen-xs) {
+             font-size: 4em;
+           }
+
+           @media (max-width: $screen-xxs) {
+             font-size: 3em;
+           }
+        }
+
+        @media (max-width: $screen-xs) {
+          width: 85%;
+          text-align: left;
+          float: left;
         }
       }
 
       .nav-right {
-        span {
+        span.menu {
           display: none;
+
+          @media (max-width: $screen-xs) {
+            display: block;
+            cursor: pointer;
+            position: relative;
+            text-align: right;
+            width: 100%;
+            margin: 0;
+
+            img {
+              width: 98%;
+              max-height: 33px;
+              max-width: 33px;
+            }
+          }
         }
 
-        ul {
+        ul.nav-list {
           padding: 0;
           margin: 38px 0 0 0;
 
@@ -65,20 +98,27 @@
             }
 
             a {
-              // color: $color-dark-grey;
               color: $color-white;
               margin: 0px 0px;
               font-size: 17px;
               padding: 11px 104px;
-              // background: $color-white;
               background: $color-green;
               font-weight: 600;
               text-decoration: none;
 
-              &:hover{
-                // color: $color-dark-grey;
+              &:hover {
                 color: $color-light-green;
                 @include transition(.5s all);
+              }
+
+              @media (max-width: $screen-xs) {
+                color: $color-dark-grey;
+                // background: $color-white !important;
+                background: $color-grey !important;
+
+                &:hover {
+                  color: $color-dark-grey;
+                }
               }
             }
           }
@@ -206,6 +246,39 @@
               }
             }
           }
+
+          @media (max-width: $screen-xs) {
+            display: none;
+            background: $color-grey;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: 44px;
+            left: 0%;
+            width: 100%;
+            z-index: 999;
+
+            li {
+              display: inline-block;
+              text-align: center;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              line-height: 1.5em;
+
+              a {
+                display: block;
+                background: $color-grey;
+                margin: 0;
+              }
+            }
+          }
+        }
+
+        @media (max-width: $screen-xs) {
+          width: 12%;
+          margin: 6px 0 0;
+          float: right;
         }
       }
 
@@ -223,6 +296,13 @@
       @media (max-width: $screen-sm) {
         padding-top: 0;
       }
+
+      @media (max-width: $screen-xs) {
+        // padding: 0 10px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .banner-image {
@@ -239,6 +319,14 @@
 
         @media (max-width: $screen-lg) {
           width: 90%;
+        }
+
+        @media (max-width: $screen-xs) {
+          width: 81%;
+        }
+
+        @media (max-width: $screen-xxs) {
+          width: 55%;
         }
       }
 
@@ -260,6 +348,16 @@
         img {
           width: 100%;
         }
+      }
+
+      @media (max-width: $screen-xs) {
+        float: right;
+      }
+
+      @media (max-width: $screen-xxs) {
+        margin-top: 30px;
+        padding: 0;
+        width: 100%;
       }
     }
   }

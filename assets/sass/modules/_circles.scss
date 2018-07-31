@@ -33,6 +33,10 @@
           margin: 25px 0 0 0;
           font-size: 19px;
         }
+
+        @media (max-width: $screen-xs) {
+          font-size: 15px;
+        }
       }
 
       @media (max-width: $screen-md) {
@@ -51,6 +55,15 @@
 
         &:nth-child(3), &:nth-child(4)  {
           margin: 30px 0;
+        }
+      }
+
+      @media (max-width: $screen-xxs) {
+        width: 100%;
+        padding: 0;
+
+        &:nth-child(2), &:nth-child(3), &:nth-child(4)  {
+          margin: 30px 0 0;
         }
       }
     }

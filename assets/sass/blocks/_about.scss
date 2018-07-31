@@ -22,6 +22,14 @@
       @media (max-width: $screen-md) {
         font-size: 15px;
       }
+
+      @media (max-width: $screen-xs) {
+        margin: 10px 0 11px;
+      }
+
+      @media (max-width: $screen-xxs) {
+        font-size: 17px;
+      }
     }
 
     p {
@@ -64,6 +72,10 @@
         @media (max-width: $screen-sm) {
           font-size: 20px;
         }
+
+        @media (max-width: $screen-xs) {
+          font-size: 19px;
+        }
       }
 
       p {
@@ -84,6 +96,16 @@
 
         p {
           padding: 1em 0 0 0;
+        }
+      }
+
+      @media (max-width: $screen-xs) {
+        float: left;
+        width: 100%;
+        padding: 0;
+
+        &:nth-child(2) {
+          margin-top: 25px;
         }
       }
     }

@@ -191,6 +191,19 @@
           margin: 14px 0 10px 0;
         }
       }
+
+      @media (max-width: $screen-xs) {
+        float: left;
+        width: 50%;
+
+        &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+          margin-top: 35px;
+        }
+      }
+
+      @media (max-width: $screen-xxs) {
+        width: 100%;
+      }
     }
   }
 }

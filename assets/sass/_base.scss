@@ -1,4 +1,5 @@
 body {
+  min-width: 250px;
   margin: 0;
   padding: 0;
   background: $color-white;
@@ -96,7 +97,7 @@ ul {
     margin-top: 45px;
   }
 
-  .about .about-info h3, .skills .info h2, .get-info h3 {
+  .about .about-info h3, .skills .info h2, .services h3, .get-info h3 {
     font-size: 40px;
   }
 }
@@ -104,7 +105,7 @@ ul {
   .about, .skills, .services, .get-in-touch, .contact {
     padding: 50px 0;
   }
-  .about .about-info h3, .skills .info h2, .get-info h3 {
+  .about .about-info h3, .skills .info h2, .services h3, .get-info h3 {
     font-size: 35px;
   }
   .about .about-info p, .about .grid p, .services .grid p, .get-info p, .contact .grid p{
@@ -120,8 +121,24 @@ ul {
   .about, .skills, .services, .get-in-touch, .contact {
     padding: 45px 0;
   }
-  .about .about-info h3, .skill .info h2, .get-info h3 {
+  .about .about-info h3, .skills .info h2, .services h3, .get-info h3 {
     font-size: 30px;
+  }
+}
+@media (max-width: $screen-xs) {
+  .about .about-info h3, .skills .info h2, .services h3, .get-info h3 {
+    font-size: 26px;
+  }
+  .about .grids, .services .grids, .contact .info {
+    margin-top: 22px;
+  }
+}
+@media (max-width: $screen-xxs) {
+  .about, .skills, .services, .get-in-touch, .contact {
+    padding: 35px 0;
+  }
+  .about .about-info h3, .skills .info h2, .services h3, .get-info h3 {
+    font-size: 24px;
   }
 }
 /*-- //responsive media queries --*/

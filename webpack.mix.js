@@ -1,4 +1,5 @@
 const { mix } = require('laravel-mix');
+const webpack = require("webpack");
 
 /*
  |--------------------------------------------------------------------------
@@ -13,6 +14,15 @@ const { mix } = require('laravel-mix');
 
 mix.setPublicPath('build');
 mix.setResourceRoot('../');
+
+mix.webpackConfig({
+    plugins: [
+        new webpack.ProvidePlugin({
+            jQuery: "jquery",
+            $: "jquery"
+        }),
+    ],
+});
 
 // Core assets
 mix.js('assets/js/app.js', 'build/js')
