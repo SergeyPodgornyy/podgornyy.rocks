@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "cross-env": "^3.2.3",
-    "laravel-mix": "2.*",
+    "laravel-mix": "6.*",
     "hoek": "^4.2.1"
   }
 }
